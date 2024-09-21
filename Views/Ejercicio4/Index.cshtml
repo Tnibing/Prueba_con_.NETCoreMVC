@@ -1,0 +1,34 @@
+﻿@{
+    ViewData["Title"] = "Francisco Navarro";
+}
+<div class="text-center">
+    <h1 class="display-4">Ejercicio 4</h1>
+</div>
+<br>
+<br>
+Un formulario Html nos enviará:
+<ul>
+    <li>Una subcadena para realizar una búsqueda.</li>
+    <li>Una cadena de texto.</li>
+</ul>
+<br>
+El script de PHP (el controlador de .NET):
+<ul>
+    <li>Buscará todas las palabras de la cadena de texto que contienen la subcadena de búsqueda.</li>
+    <li>Mostrará en pantalla los resultados separados por comas.</li>
+</ul>
+<br>
+Por ejemplo, buscamos «ti» en la cadena «en el instituto Abastos se estudian ciclos de la familia de Administración y de la familia de Informàtica».
+El script generará como respuesta: <br>
+Se han encontrado las siguientes palabras que contienen la subcadena «ti»: instituto, Informática
+(elimina la coma final si hay varios resultados).
+<br>
+<br>
+<br>
+<form action="/Ejercicio4/Solucion" method="post">
+    <label>Introduce una cadena de texto</label><br>
+    <input type="text" name="cadena"><br><br>
+    <label>Introduce tu búsqueda</label><br>
+    <input type="text" name="busqueda"><br><br>
+    <input type="submit" value="Enviar mediante POST">
+</form>

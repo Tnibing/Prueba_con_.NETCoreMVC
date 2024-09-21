@@ -1,0 +1,37 @@
+﻿@{
+    ViewData["Title"] = "Francisco Navarro";
+}
+<div class="text-center">
+    <h1 class="display-4">Ejercicio 5</h1>
+</div>
+<br>
+<br>
+<p>
+Vuelve a resolver el ejercicio anterior, efectuando algunas mejoras:
+<ul>
+    <li>
+       El buscador no será sensible a mayúsculas. 
+    </li>
+    <li>
+        Tampoco será sensible a acentos.
+    </li>
+    <li>
+        Además de separar palabras por espacios en blanco, separará por comas.
+    </li>
+</ul>
+<br>
+<p>
+Por ejemplo, si buscamos «dÁ» en la cadena «los ciclos de informática de grado superior son DAM, DAW y ASIR»
+, saldrá como resultado «DAM, DAW» (y no «DAM,, DAW» que saldría si solo separara por espacios.)
+</p>
+
+<br>
+<br>
+
+<form action="/Ejercicio5/Solucion" method="post">
+    <label>Introduce una cadena</label><br>
+    <input type="text" name="cadena"><br><br>
+    <label>Introduce tu búsqueda</label><br>
+    <input type="text" name="busqueda"><br><br>
+    <input type="submit" value="Enviar mediante POST">
+</form>

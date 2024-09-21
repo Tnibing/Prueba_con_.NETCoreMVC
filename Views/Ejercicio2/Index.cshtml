@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Francisco Navarro";
+}
+<div class="text-center">
+    <h1 class="display-4">Ejercicio 2</h1>
+</div>
+<br>
+<br>
+<p>
+    Resolver el mismo ejercicio que en el apartado 1, pero ahora la cadena nos llega desde un formulario Html.
+    (Lo voy a hacer con Regex.Matches para que sea más sencillo)
+</p>
+<br><br>
+<form action="/Ejercicio2/Solucion" method="post">
+    <label>Introduce una frase para contar sus vocales</label><br>
+    <input type="text" name="cadena"><br><br>
+    <input type="submit" value="Enviar mediante POST"><br>
+</form>

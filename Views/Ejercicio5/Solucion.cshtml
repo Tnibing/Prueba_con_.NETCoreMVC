@@ -1,0 +1,33 @@
+﻿@{
+    ViewData["Title"] = "Francisco Navarro";
+}
+<div class="text-center">
+    <h1 class="display-4">Ejercicio 5</h1>
+</div>
+<br>
+<br>
+<p>
+    Resultado de búsqueda de "@ViewBag.Busqueda" en la cadena "@ViewBag.Cadena":
+</p>
+<br>
+@if (ViewBag.Encontradas != null && ViewBag.Encontradas.Count > 0)
+{
+    <ul>
+        @foreach(string palabra in ViewBag.Encontradas)
+        {
+            <li>
+                @palabra
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>
+        No se han encontrado coincidencias.
+    </p>
+}
+<br>
+<form action="/Ejercicio5">
+    <input type="submit" value="Volver">
+</form>
